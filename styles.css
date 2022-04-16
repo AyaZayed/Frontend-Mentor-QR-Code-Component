@@ -8,11 +8,12 @@
 body {
   background-color: var(--Light-gray);
   font-family: "Outfit", sans-serif;
+  padding: 20px;
 }
 
 .card {
   background-color: var(--White);
-  margin: 6rem auto;
+  margin: 5rem auto;
   width: 20%;
   text-align: center;
   padding: 15px;
@@ -23,6 +24,24 @@ body {
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
+}
+
+@media screen and (max-width: 576px) {
+  .card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .card {
+    width: 40%;
+  }
 }
 
 .card img {
